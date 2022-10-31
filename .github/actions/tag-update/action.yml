@@ -1,0 +1,7 @@
+name: 'update github tag'
+description: automatically increments the repository's github tag
+runs:
+  using: composite
+  steps:
+    - run: $GITHUB_ACTION_PATH/update.sh
+      shell: bash
