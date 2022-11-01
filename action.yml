@@ -3,5 +3,5 @@ description: automatically increments the repository's github tag
 runs:
   using: 'composite'
   steps:
-    - run: update.sh
+    - run: update.sh -v patch
       shell: bash
